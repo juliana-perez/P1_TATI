@@ -29,31 +29,31 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_index));
-            button1 = new Button();
-            button2 = new Button();
+            btn_login = new Button();
+            btn_Cadastrar = new Button();
             label1 = new Label();
             label2 = new Label();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // btn_login
             // 
-            button1.Location = new Point(314, 102);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "Login";
-            button1.UseVisualStyleBackColor = true;
+            btn_login.Location = new Point(314, 102);
+            btn_login.Name = "btn_login";
+            btn_login.Size = new Size(75, 23);
+            btn_login.TabIndex = 0;
+            btn_login.Text = "Login";
+            btn_login.UseVisualStyleBackColor = true;
+            btn_login.Click += button1_Click;
             // 
-            // button2
+            // btn_Cadastrar
             // 
-            button2.Location = new Point(314, 131);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 1;
-            button2.Text = "Cadastrar";
-            button2.UseVisualStyleBackColor = true;
+            btn_Cadastrar.Location = new Point(314, 131);
+            btn_Cadastrar.Name = "btn_Cadastrar";
+            btn_Cadastrar.Size = new Size(75, 23);
+            btn_Cadastrar.TabIndex = 1;
+            btn_Cadastrar.Text = "Cadastrar";
+            btn_Cadastrar.UseVisualStyleBackColor = true;
+            btn_Cadastrar.Click += btn_Cadastrar_Click;
             // 
             // label1
             // 
@@ -76,38 +76,27 @@
             label2.TabIndex = 3;
             label2.Text = "Acesso restrito à profissinais de imprensa";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(151, 228);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
-            pictureBox1.TabIndex = 4;
-            pictureBox1.TabStop = false;
-            // 
             // frm_index
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(707, 287);
-            Controls.Add(pictureBox1);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btn_Cadastrar);
+            Controls.Add(btn_login);
             Name = "frm_index";
             Text = "Informações para Imprensa";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
-        private Button button2;
+        private Button btn_login;
+        private Button btn_Cadastrar;
         private Label label1;
         private Label label2;
-        private PictureBox pictureBox1;
     }
 }
