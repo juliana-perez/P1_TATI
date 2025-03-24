@@ -1,8 +1,8 @@
 namespace P1_TATI
 {
-    public partial class Form1 : Form
+    public partial class frm_index : Form
     {
-        public Form1()
+        public frm_index()
         {
             InitializeComponent();
         }
